@@ -5,6 +5,12 @@ import java.util.List;
 
 public class Student {
 
+  public Student() {}
+
+  public Student(final String name) {
+    this.name = name;
+  }
+
   private String name;
   private int gradeLevel;
   private double gpa;
@@ -48,6 +54,10 @@ public class Student {
     this.gpa = gpa;
   }
 
+  public void printListOfActivities() {
+    System.out.println(activities);
+  }
+
   private List<String> activities = new ArrayList<>();
 
   public String getGender() {
@@ -75,11 +85,11 @@ public class Student {
     );
   }
 
-public List<String> getActivities() {
+  public List<String> getActivities() {
     return activities;
-}
+  }
 
-public void setActivities(List<String> activities) {
+  public void setActivities(List<String> activities) {
     this.activities = activities;
-}
+  }
 }
