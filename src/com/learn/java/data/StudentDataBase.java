@@ -30,7 +30,7 @@ public class StudentDataBase {
       2,
       3.6,
       "male",
-      /* 10, */
+      10,
       Arrays.asList("swimming", "basketball", "volleyball")
     );
     Student student2 = new Student(
@@ -38,7 +38,7 @@ public class StudentDataBase {
       2,
       3.8,
       "female",
-      /* 11, */
+      11,
       Arrays.asList("swimming", "gymnastics", "soccer")
     );
     /**
@@ -49,7 +49,7 @@ public class StudentDataBase {
       3,
       4.0,
       "female",
-      /* 12, */
+      12,
       Arrays.asList("swimming", "gymnastics", "aerobics")
     );
     Student student4 = new Student(
@@ -57,7 +57,7 @@ public class StudentDataBase {
       3,
       4.0,
       "male",
-      /* 15, */
+      15,
       Arrays.asList("swimming", "gymnastics", "soccer")
     );
     /**
@@ -68,7 +68,7 @@ public class StudentDataBase {
       4,
       3.5,
       "female",
-      /* 10, */
+      10,
       Arrays.asList("swimming", "dancing", "football")
     );
     Student student6 = new Student(
@@ -76,7 +76,7 @@ public class StudentDataBase {
       4,
       3.9,
       "male",
-      /* 22, */
+      22,
       Arrays.asList("swimming", "basketball", "baseball", "football")
     );
 
