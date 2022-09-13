@@ -1,7 +1,9 @@
 package com.learn.java.data;
 
+import com.learn.java.optional.Bike;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Student {
 
@@ -16,6 +18,15 @@ public class Student {
   private double gpa;
   private String gender;
   private int noteBooks;
+  private Optional<Bike> bike = Optional.empty();
+
+  public Optional<Bike> getBike() {
+    return bike;
+  }
+
+  public void setBike(Optional<Bike> bike) {
+    this.bike = bike;
+  }
 
   public Student(
     String name,
@@ -45,6 +56,18 @@ public class Student {
     this.gpa = gpa;
     this.gender = gender;
     this.activities = activities;
+  }
+
+  public Student(
+    String name,
+    int gradeLevel,
+    double gpa,
+    String gender,
+    List<String> activities,
+    Optional<Bike> bike
+  ) {
+    this(name, gradeLevel, gpa, gender, activities);
+    this.bike = bike;
   }
 
   public String getName() {
@@ -85,21 +108,23 @@ public class Student {
     this.gender = gender;
   }
 
-  
-
   @Override
   public String toString() {
     return (
-      "Student [name=" +
-      name +
-      ", gradeLevel=" +
-      gradeLevel +
-      ", gpa=" +
-      gpa +
+      "Student [activities=" +
+      activities +
+      ", bike=" +
+      bike +
       ", gender=" +
       gender +
-      ", activities=" +
-      activities +
+      ", gpa=" +
+      gpa +
+      ", gradeLevel=" +
+      gradeLevel +
+      ", name=" +
+      name +
+      ", noteBooks=" +
+      noteBooks +
       "]"
     );
   }
