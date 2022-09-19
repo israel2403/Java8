@@ -92,7 +92,8 @@ public class StudentDataBase {
       student3,
       student4,
       student5,
-      student6
+      student6,
+      null
     );
     return students;
   }
